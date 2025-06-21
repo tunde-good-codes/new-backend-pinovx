@@ -30,7 +30,7 @@ if (process.env.NODE_ENV === 'development') {
 
 // Enable CORS
 app.use(cors({
-  origin: ['https://localhost:5173', 'http://localhost:5173'],
+  origin: ['https://localhost:5173', 'http://localhost:5173','https://pinovx.onrender.com'],
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
   credentials: true, // if you want to allow cookies/auth headers
