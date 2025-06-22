@@ -351,7 +351,7 @@ exports.googleAuthCallback = async (req, res, next) => {
 
     req.login(user, (err) => {
       if (err) return next(err);
-      return res.redirect(process.env.FRONTEND_URL || "/");
+      return res.redirect(process.env.BASE_URL || "/");
     });
   } catch (error) {
     next(error);
