@@ -85,7 +85,7 @@ exports.register = async (req, res, next) => {
     });
 
     // Send verification email
-const verificationUrl = `${process.env.API_URL}/verify-email/${verificationToken}`;
+const verificationUrl = `${process.env.API_URL}/api/auth/verify-email/${verificationToken}`;
 
     await sendVerificationEmail(user, verificationUrl);
 
